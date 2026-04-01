@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>清明三峡纯电自驾 | 成都→奉节→巫山 3天2晚路书</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+            background: #f2f5f9;
+            color: #1e2a32;
+            padding: 0 0 40px 0;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            border-radius: 0 0 28px 28px;
+            overflow: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0b5e42, #1d8a6b);
+            color: white;
+            padding: 32px 20px 40px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .hero .date {
+            font-size: 15px;
+            opacity: 0.9;
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 40px;
+            margin-top: 8px;
+        }
+        .hero .car-badge {
+            background: #f4b942;
+            color: #2c3e2f;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 16px;
+        }
+
+        .info-card {
+            background: #eef3ec;
+            margin: -20px 16px 20px 16px;
+            padding: 16px 18px;
+            border-radius: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .info-card .title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .charge-tag {
+            background: #2b7a4b;
+            color: white;
+            border-radius: 20px;
+            padding: 2px 10px;
+            font-size: 12px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .day-section {
+            margin: 24px 16px;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid #e0ede8;
+        }
+        .day-header {
+            background: #fef5e3;
+            padding: 14px 20px;
+            border-left: 6px solid #e67e22;
+            font-weight: 800;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .day-header span:first-child {
+            color: #b45f1b;
+        }
+        .day-body {
+            padding: 16px 18px;
+        }
+        .timeline-item {
+            margin-bottom: 24px;
+            border-bottom: 1px dashed #e0eef5;
+            padding-bottom: 18px;
+        }
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .time {
+            font-weight: 700;
+            color: #e67e22;
+            font-size: 14px;
+            display: inline-block;
+            background: #fef2e6;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .title {
+            font-weight: 700;
+            font-size: 18px;
+            margin: 6px 0 8px 0;
+        }
+        .desc {
+            font-size: 14.5px;
+            color: #2c3e44;
+            margin: 8px 0;
+        }
+        .food-recommend {
+            background: #fff7eb;
+            padding: 12px 14px;
+            border-radius: 20px;
+            margin: 12px 0 6px;
+            border-left: 4px solid #f39c12;
+        }
+        .hotel-box {
+            background: #e9f3fa;
+            padding: 12px 14px;
+            border-radius: 20px;
+            margin: 12px 0 6px;
+            border-left: 4px solid #3498db;
+        }
+        .night-market {
+            background: #fce4d6;
+            padding: 12px 14px;
+            border-radius: 20px;
+            margin: 10px 0;
+        }
+        .tip-box {
+            background: #e9f4f0;
+            border-radius: 20px;
+            padding: 14px;
+            margin-top: 16px;
+            font-size: 13.5px;
+        }
+        .footer-note {
+            background: #f0f3f6;
+            text-align: center;
+            padding: 24px 20px;
+            font-size: 12px;
+            color: #5c6f7e;
+            border-top: 1px solid #dce5ec;
+            margin-top: 20px;
+        }
+        .bold {
+            font-weight: 700;
+        }
+        @media (max-width: 480px) {
+            .day-header {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <h1>🌸 清明·三峡踏青</h1>
+        <p>成都 ➜ 万州烤鱼 ➜ 奉节白帝城 ➜ 巫山小三峡</p>
+        <div class="date">📅 2026年4月4日 — 4月6日 (清明假期) | 纯电自驾3天2晚</div>
+        <div class="car-badge">🚗 纯电续航450km | 高速超充全覆盖 · 无忧补能</div>
+    </div>
+
+    <!-- 充电+游船关键信息卡片 -->
+    <div class="info-card">
+        <div class="title">🔋 纯电无忧 · 清明补能贴士</div>
+        <div class="desc">
+            <span class="charge-tag">V4超充已覆盖</span> 重庆高速55座超充站上线，G42沪蓉高速梁平、万州、云阳、巫山服务区均有全品牌超充桩，15分钟补能250km。<br>
+            🚢 <strong>游船特别提示</strong>：巫山小三峡游船务必提前1-2天线上购票（携程/美团/惠游重庆），清明假期游客较多，现场可能无余票。<br>
+            🅿️ 各景区均有充电车位，建议每日出发前保持电量80%以上。
+        </div>
+    </div>
+
+    <!-- DAY 1 成都→万州烤鱼→奉节 住宿+夜市 -->
+    <div class="day-section">
+        <div class="day-header">
+            <span>🌿 DAY 1 · 4月4日 (周六·清明)</span>
+            <span>🚗 成都 → 万州 → 奉节</span>
+        </div>
+        <div class="day-body">
+            <div class="timeline-item">
+                <div class="time">07:30 - 08:00</div>
+                <div class="title">🚀 满电出发，奔向烤鱼之都</div>
+                <div class="desc">成都满电450km出发，导航万州城区（全程约480km），途经G42沪蓉高速，<strong>建议在梁平服务区超充站补电一次</strong>（15分钟快充），顺便休息吃早餐。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">12:30 - 14:00</div>
+                <div class="title">🐟 万州烤鱼 · 王者体验</div>
+                <div class="desc">📍 <strong>小舅母子烤鱼(天生天城店)</strong> — 本地评分榜TOP1，泡椒味和蒜香烤鱼一绝，外酥里嫩，人均¥70。清明期间建议11:30前到店避免排队。<br>⭐ 备选高分店：独一处烤鱼(移民广场店)、心连心广场烤鱼一条街。</div>
+                <div class="food-recommend">🔥 必点搭配：烤鱼加魔芋、土豆、宽粉，配一碗万州凉面（芥末味），再来份红糖糍粑。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">15:00 - 17:00</div>
+                <div class="title">🏨 前往奉节 · 入住推荐</div>
+                <div class="desc">
+                    <strong>🏠 奉节住宿攻略：</strong><br>
+                    • <strong>奉节诗城皇廷大酒店</strong> — 滨江路地标，江景房可看夔门方向，停车方便，近夔门广场，约¥350-500/晚。<br>
+                    • <strong>奉节欧庭国际酒店</strong> — 性价比高，干净舒适，距白帝城15分钟车程，含早，¥260左右。<br>
+                    • 特色民宿可选<strong>“瞿塘峡·赤甲山居”</strong>，山景诗意，适合观星。
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">18:30 - 21:00</div>
+                <div class="title">🌙 奉节夜市 · 滨江路夜宵江湖</div>
+                <div class="night-market">
+                    🍢 <strong>奉节夜市&小吃推荐</strong>：<br>
+                    ▶ <strong>夔门广场夜市</strong>：聚集了本地人最爱的烧烤摊、烤鱼排档，推荐“张记烧烤”的烤苕皮、烤脑花；<br>
+                    ▶ <strong>人和街美食一条街</strong>：<strong>“竹园盬子鸡”</strong>夜宵版、<strong>奉节脐橙鲜榨汁</strong>、<strong>三角粑</strong>、<strong>麻辣洋芋片</strong>；<br>
+                    ▶ 必尝小吃：<strong>奉节格格</strong>（粉蒸羊肉/肥肠）、<strong>萝卜丝油钱</strong>，烟火气十足。
+                </div>
+                <div class="desc">餐后可散步滨江公园，欣赏长江夜景，吹吹江风，为第二天行程蓄力。</div>
+            </div>
+            <div class="tip-box">
+                💡 <strong>充电提醒</strong>：奉节城区滨江国际、欧庭酒店附近均有快充站，晚上补电至90%，次日白帝城游玩电量无忧。
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 2 白帝城·瞿塘峡 + 三峡之巅 + 巫山住宿&夜市 -->
+    <div class="day-section">
+        <div class="day-header">
+            <span>🏞️ DAY 2 · 4月5日 (周日)</span>
+            <span>⛰️ 白帝城 · 瞿塘峡 → 巫山小三峡</span>
+        </div>
+        <div class="day-body">
+            <div class="timeline-item">
+                <div class="time">08:30 - 12:00</div>
+                <div class="title">🏯 白帝城·瞿塘峡景区（10元人民币背景）</div>
+                <div class="desc">📍 门票¥57起（线上提前购），建议游玩3-4小时。登白帝庙、观夔门雄姿，乘免费渡船到赤甲楼，近距离感受瞿塘峡之险，偶遇野生猴群。<br>
+                ⚠️ <strong>购票注意</strong>：清明假期务必提前1天在“携程/美团”买票，刷身份证入园，景区8:00开放，建议早去避人流。</div>
+                <div class="food-recommend">📸 经典机位：夔门观景台、赤甲楼古炮台、风雨廊桥。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">12:30 - 13:30</div>
+                <div class="title">🍚 奉节地道午餐</div>
+                <div class="desc">推荐“夔门印象”餐厅或县城“竹园盬子鸡总店”，品尝紫阳鸡汤、高山洋芋饭。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">14:00 - 15:30</div>
+                <div class="title">🚗 前往巫山（约70km，1.5h）</div>
+                <div class="desc">G42沪蓉高速直达巫山，途中可于草堂/巫山服务区补电（V4超充），抵达后办理入住。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">16:00 - 19:30</div>
+                <div class="title">🛥️ 巫山小三峡·游船（核心体验）</div>
+                <div class="desc"><strong>必须提前线上购票！</strong> 小三峡+小小三峡全程船票约¥120-140，清明假期建议提前2天在“惠游重庆”或携程预订，下午班次通常14:00/15:00，游船全程4小时，峡谷风光如画，看悬棺、云雾巫山。船上有讲解，景色绝美。</div>
+                <div class="tip-box">🎫 预约重点：凭身份证换票，务必至少提前30分钟抵达巫山游客中心（宁江路），假期人多可提前1小时排队登船。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">20:00 - 22:00</div>
+                <div class="title">🌃 巫山住宿 · 滨江夜市逛吃</div>
+                <div class="hotel-box">
+                    🏨 <strong>巫山住宿推荐：</strong><br>
+                    • <strong>巫山江山红叶酒店</strong> — 江景最佳，正对巫峡口，步行至游客中心仅5分钟，清明价格¥500-700，建议提前两周预订。<br>
+                    • <strong>巫山汉庭/全季酒店</strong> — 连锁品质，停车方便，性价比高，¥280-400。<br>
+                    • 特色民宿：<strong>“神女苑”江景民宿</strong>，阳台可观长江大桥夜景。
+                </div>
+                <div class="night-market">
+                    🍡 <strong>巫山夜市 & 必吃小吃</strong> —— 地点：<strong>广东路夜市/滨江路美食街</strong><br>
+                    ✔ <strong>巫山烤鱼</strong>（不同于万州，偏麻辣纸包鱼）推荐“汪家馆烤鱼”、“陈记纸上烤鱼”；<br>
+                    ✔ <strong>翡翠凉粉</strong>（巫山特有，绿豆粉配酸辣调料，清爽解腻）；<br>
+                    ✔ <strong>巫山雪枣</strong>（传统糕点，甜而不腻）、<strong>萝卜干腊肉包</strong>；<br>
+                    ✔ 夜宵烧烤必点：<strong>烤魔芋、烤鲫鱼、苕皮豆干</strong>，配一瓶“巫山云雾茶”。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 3 巫山神女天路 + 万州二刷烤鱼 + 返程 -->
+    <div class="day-section">
+        <div class="day-header">
+            <span>🌄 DAY 3 · 4月6日 (周一)</span>
+            <span>🍃 巫山云雨 → 万州 → 成都</span>
+        </div>
+        <div class="day-body">
+            <div class="timeline-item">
+                <div class="time">08:00 - 10:00</div>
+                <div class="title">🌅 神女天路/文峰观 · 晨雾仙境</div>
+                <div class="desc">推荐自驾<strong>神女天路</strong>（导航“神女景区·望霞台”），沿途多个观景台俯瞰长江与巫山十二峰；或登<strong>文峰观</strong>（门票约¥30），视野开阔，清明晨雾缭绕时如入仙境。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">10:30 - 12:00</div>
+                <div class="title">🛒 巫山特产采购</div>
+                <div class="desc">巫山脆李酒（春季有酿制款）、庙党（药材）、三峡石工艺品、干洋芋果果。县城神女市场可一站式购齐。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">12:30 - 14:00</div>
+                <div class="title">🐟 返程途经万州 · 二刷烤鱼新口味</div>
+                <div class="desc">📍 <strong>独一处烤鱼(北山店)</strong> 或 <strong>渝尾巴烤鱼</strong>，体验泡椒和香辣复合口味。若时间充裕可到<strong>心连心广场</strong>烤鱼城吃“曾记烤鱼”，顺带买万州牛肉干。</div>
+                <div class="food-recommend">🍜 搭配万州杂酱面、程凉粉，味蕾再回味。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">14:30 - 20:00</div>
+                <div class="title">🔋 满电返程成都</div>
+                <div class="desc">G42沪蓉高速，万州/梁平服务区均有超充，清明返程高峰注意错峰，建议下午2点前上高速，避开拥堵。预计傍晚抵达成都，结束完美三峡之旅。</div>
+            </div>
+            <div class="tip-box">
+                📌 <strong>清明特别TIPS</strong><br>
+                • 白帝城、巫山小游船假期排队较多，建议穿舒适鞋子，备些干粮。<br>
+                • 充电站可能因假期充电车辆增多，可提前在高德地图查看占用情况，灵活调整。<br>
+                • 山区早晚温差大，备薄外套，雨天带雨具，部分观景台湿滑。
+            </div>
+        </div>
+    </div>
+
+    <!-- 万州烤鱼深度推荐卡片 -->
+    <div class="day-section">
+        <div class="day-header">
+            <span>🔥 万州烤鱼 · 评分王者深度解析</span>
+            <span>🐟 必吃指南</span>
+        </div>
+        <div class="day-body">
+            <div class="desc">
+                🏆 <strong>小舅母子烤鱼(天生天城店)</strong> — 大众点评4.9分，秘制酱料，泡椒味回味无穷，环境宽敞，适合家庭自驾。<br>
+                🏆 <strong>独一处烤鱼(移民广场店)</strong> — 央视推荐，24年老店，鱼肉腌制入味，推荐香辣和豆豉双拼。<br>
+                🏆 <strong>曾记烤鱼(心连心广场)</strong> — 万州烤鱼节获奖品牌，烤鱼配萝卜丝非常清爽。
+            </div>
+            <div class="food-recommend">
+                💡 点鱼秘籍：清江鱼/黔鱼刺少，加魔芋、豆皮、土豆、藕片，烤鱼汤汁拌面一绝。
+            </div>
+        </div>
+    </div>
+
+    <!-- 门票预约+住宿+夜市汇总 -->
+    <div class="day-section">
+        <div class="day-header">
+            <span>🎫 门票预约 · 住宿&夜市清单</span>
+            <span>📋 关键提醒</span>
+        </div>
+        <div class="day-body">
+            <div class="timeline-item">
+                <div class="title">🏯 白帝城·瞿塘峡景区</div>
+                <div class="desc">✅ 线上平台（携程/美团）提前1天购票，成人¥57-100，刷身份证入园。开放时间08:00-17:30，停车北门10元/次，清明假期建议08:30前抵达。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="title">🛥️ 巫山小三峡游船</div>
+                <div class="desc">✅ <strong class="bold">务必提前1-2天购票！</strong> 微信搜索“惠游重庆”或携程，选择“巫山小三峡+小小三峡”全程票，成人票约¥120-140，凭身份证游客中心换票登船。每日班次9:00/10:00/14:00/15:00（视天气微调）。清明假期加开班次可能有限，早买早安心。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="title">🏨 住宿+夜市口袋攻略</div>
+                <div class="desc">
+                    <strong>📍 奉节</strong>：住滨江路/夔门广场附近，夜逛<strong>人和街夜市</strong>尝格格、三角粑、烤苕皮。<br>
+                    <strong>📍 巫山</strong>：推荐住游客中心周边（宁江路），夜游<strong>广东路夜市</strong>必吃翡翠凉粉、巫山烤鱼、雪枣糕点。<br>
+                    <strong>📍 万州</strong>：中午停留期间可打卡<strong>万达金街</strong>，凉面、程凉粉、万州牛肉干补给。
+                </div>
+                <div class="night-market" style="margin-top: 8px;">
+                    🍢 夜市必吃榜：奉节三角粑、巫山翡翠凉粉、万州烤鱼、萝卜丝油钱、烤魔芋、红糖冰粉。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-card" style="background: #e6f2ef;">
+        <div class="title">⚡ 清明纯电 · 极致无忧</div>
+        <div class="desc">
+            特斯拉重庆高速55座V4超充站全面开放（含G42沪蓉全段），所有品牌新能源车均可通过“特斯拉”小程序扫码充电，充电效率稳定。<br>
+            推荐使用“e充电”或“高德地图”实时规划，万州、奉节、巫山城区均有≥3个快充站，单日补能轻松。<br>
+            🎋 带上好心情，驰骋三峡，祝您清明旅途春风得意，美食美景满载而归！
+        </div>
+    </div>
+
+    <div class="footer-note">
+        🌊 路书制作依据2026年4月实时信息，清明假期酒店和游船票建议提前7天预订。<br>
+        行前请关注“奉节白帝城”“巫山小三峡”官方公众号获取最新船期及天气。<br>
+        🚘 安全驾驶，满电出发，饱览长江山水画卷！
+    </div>
+</div>
+</body>
+</html>
